@@ -1,0 +1,21 @@
+{
+    "pre-commit": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "composer fix"
+            },
+            {
+                "action": "git add ."
+            }
+        ]
+    },
+    "pre-push": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "composer stan"
+            }
+        ]
+    }
+}
